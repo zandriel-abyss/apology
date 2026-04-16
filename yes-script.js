@@ -1,4 +1,8 @@
 let musicPlaying = false
+const YES_TITLE_TEXT = "BRUHHHHH 🥹!!!"
+const YES_MESSAGE_TEXT = "Ok, Now I go prepare for the intereview! 😎"
+const YES_GIF_FILE = "hugging-queen-charlotte.gif"
+const YES_MUSIC_FILE = "music/nyanyes.mp3"
 const floatingLyrics = [
     "Highs and lows",
     "I put you through a lot, I know",
@@ -19,7 +23,12 @@ const floatingLyrics = [
     "Awwoooooooooooo!",
 ]
 
+function resolveAssetPath(fileName) {
+    return new URL(fileName, window.location.href).href
+}
+
 window.addEventListener('load', () => {
+    applyYesPageContent()
     initFloatingLyrics()
     launchConfetti()
 
@@ -30,6 +39,20 @@ window.addEventListener('load', () => {
     musicPlaying = true
     document.getElementById('music-toggle').textContent = '🔊'
 })
+
+function applyYesPageContent() {
+    const title = document.querySelector('.yes-title')
+    const message = document.querySelector('.yes-message')
+    const gif = document.getElementById('cat-gif')
+    const audio = document.getElementById('bg-music')
+    const source = document.querySelector('#bg-music source')
+
+    if (title) title.textContent = YES_TITLE_TEXT
+    if (message) message.textContent = YES_MESSAGE_TEXT
+    if (gif) gif.src = resolveAssetPath(YES_GIF_FILE)
+    if (source) source.src = resolveAssetPath(YES_MUSIC_FILE)
+    if (audio) audio.load()
+}
 
 function launchConfetti() {
     const colors = ['#ff69b4', '#ff1493', '#ff85a2', '#ffb3c1', '#ff0000', '#ff6347', '#fff', '#ffdf00']

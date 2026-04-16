@@ -58,6 +58,12 @@ const yesBtn = document.getElementById('yes-btn')
 const noBtn = document.getElementById('no-btn')
 const music = document.getElementById('bg-music')
 
+function resolveAssetPath(fileName) {
+    return new URL(fileName, window.location.href).href
+}
+
+catGif.src = resolveAssetPath(gifStages[0])
+
 initFloatingLyrics()
 
 // Autoplay: audio starts muted (bypasses browser policy), unmute immediately
@@ -139,7 +145,7 @@ function handleNoClick() {
 function swapGif(src) {
     catGif.style.opacity = '0'
     setTimeout(() => {
-        catGif.src = src
+        catGif.src = resolveAssetPath(src)
         catGif.style.opacity = '1'
     }, 200)
 }
