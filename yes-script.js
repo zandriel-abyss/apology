@@ -76,6 +76,7 @@ function toggleMusic() {
         musicPlaying = false
         document.getElementById('music-toggle').textContent = '🔇'
     } else {
+        music.muted = false
         music.play()
         musicPlaying = true
         document.getElementById('music-toggle').textContent = '🔊'

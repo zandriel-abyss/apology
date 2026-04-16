@@ -1,12 +1,12 @@
 const gifStages = [
-    "/Users/jzackslineandreela/Downloads/apology-main/im-about-to-cry-kate-sharma.gif",    // 0 normal
-    "https://tenor.com/EF6K.gif",  // 1 confused
-    "https://tenor.com/bT4mJ.gif",             // 2 pleading
-    "https://tenor.com/haAMDXDJ6of.gif",             // 3 sad
-    "https://tenor.com/bT4s8.gif",       // 4 sadder
-    "https://tenor.com/bCVJY.gif",             // 5 devastated
-    "https://tenor.com/bginX.gif",               // 6 very devastated
-    "https://tenor.com/bVfBc.gif"  // 7 crying runaway
+    "im-about-to-cry-kate-sharma.gif",                  // 0 normal
+    "squirrel-carrie-bradshaw.gif",    // 1 confused
+    "that-is-not-what-we-are-doing-kate-sharma.gif",                           // 2 pleading
+    "i-didnt-know-you-wanted-me-to-cry-uncomfortable.gif",          // 3 sad
+    "anya-spy-x-family-anime-anya-crying.gif",                     // 4 sadder
+    "ruby-hoshino-anime.gif",                           // 5 devastated
+    "dior-christiandior.gif", // 6 very devastated
+    "squirrel-carrie-bradshaw.gif" // 7 crying runaway
 ]
 
 const noMessages = [
