@@ -1,5 +1,5 @@
 const gifStages = [
-    "https://tenor.com/bT4s8.gif",    // 0 normal
+    "/Users/jzackslineandreela/Downloads/apology-main/im-about-to-cry-kate-sharma.gif",    // 0 normal
     "https://tenor.com/EF6K.gif",  // 1 confused
     "https://tenor.com/bT4mJ.gif",             // 2 pleading
     "https://tenor.com/haAMDXDJ6of.gif",             // 3 sad
